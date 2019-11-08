@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "vaultName": {
+        "value": "EssiRsVault02"
+      },
+      "policyName": {
+          "value": "Non-Prod-Backup-Policy"
+      },
+      "scheduleRunTimes": {
+          "value": [ "2019-10-22T02:00:00Z" ]
+      },
+      "timeZone": {
+          "value": "Romance Standard Time"
+      },
+      "dailyRetentionDurationCount": {
+          "value": 7
+      },
+      "daysOfTheWeek": {
+          "value": [ "Monday" ]
+      },
+      "weeklyRetentionDurationCount": {
+          "value": 4
+      },
+      "daysOfTheWeekForMontlyRetention": {
+        "value": [ "Monday" ]
+      },
+      "weeksOfTheMonthForMonthlyRetention": {
+        "value": [ "First" ]
+    },
+      "monthlyRetentionDurationCount": {
+          "value": 2
+      },
+      "monthsOfYear": {
+        "value": [ "January","February", "March","April", "May", "June", "July", "August", "September", "October", "November", "December" ]
+      }
+    }
+  }
